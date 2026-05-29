@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    font-size: 16px;
+}
+
+nav {
+    background-color: rgb(0, 74, 139);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.logo {
+    height: 30px;
+}
+
+ul {
+    display: none;
+}
+
+.buscador {
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    padding: 24px;
+    gap: 8px;
+}
+
+.seleccionador {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    padding: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px;
+    gap: 24px;
+}
+
+
+.card {
+    border: 1px solid rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+
+.card-desktop {
+    display: none
+}
+
+main img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    background-color: rgb(0, 74, 139);
+    color: white;
+    border-radius: 4px;
+}
+
+.numeros {
+    display: flex;
+}
+
+.numero {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(170, 170, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(0, 0, 69);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+@media (min-width: 576px) {
+
+
+.grilla-card {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    overflow-y: auto;
+}
+
+.card-desktop {
+    border: 1px solid rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    gap: 32px;
+    flex-direction: column;
+    grid-area: navbar;
+    padding: 32px;
+}
+
+ul {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+.buscador {
+    grid-area: buscador;
+}
+
+main {
+    grid-area: grilla;
+}
+
+body {
+    display: grid; 
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-areas:
+    "navbar buscador"
+    "navbar grilla"
+    "footer grilla";
+}
+
+}

@@ -64,7 +64,7 @@ Durante este proyecto se practicó:
 ## Demo
 
 GitHub Pages:
-https://usuario.github.io/desafio_mediaqueries/
+https://fabianaromeromarcel.github.io/mediaqueries/
 
 ## Autor
 

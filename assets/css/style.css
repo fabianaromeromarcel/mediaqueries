@@ -151,6 +151,12 @@ ul {
     color: white;
 }
 
+    li a, li a:visited {
+        text-decoration: none;
+        color: #efefef;
+    }
+
+
 .buscador {
     grid-area: buscador;
 }
